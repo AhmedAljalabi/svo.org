@@ -15,14 +15,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 /* *************************** without login**************************************  */
+Route::get('/join', function () {
+    return view('join4');
+});
 
+Route::get('/join1', function () {
+    return view('join1');
+});
+Route::get('/join2', function () {
+    return view('join2');
+});
+Route::get('/join3', function () {
+    return view('join3');
+});
 
 Route::get('/svo-aeed', function () {
     return view('aeed');
 });
-Route::get('/join', function () {
-    return view('join');
-});
+
 
 Route::get('/the-news', function () {
     return view('news');
